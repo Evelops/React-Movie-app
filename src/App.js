@@ -5,7 +5,7 @@ function Food(props) {
 }
 
 function App() {
-  return (// 리엑트는 jsx를 사용하여 값을 전달하는데 재사용 가능한 compoment를 따로 만들어서 값을 argument로 전달하고 
+  return (// 리엑트는 재사용 가능한 component를 만들고 값을 argument 로 전달할 수 있음. 
     <div className="App">
       <h1>hi!!!</h1> 
       <Food  fav="kimchi"/>  
