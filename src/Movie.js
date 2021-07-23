@@ -27,3 +27,5 @@
  
  export default Movie;
  // export를 해줘야 다른 js 파일에서 Movie라는 function Component를 사용할 수 있음!
+
+ //7-24 propTypes 관련 오류 찾아서 해결하기 현재 console에 오류 뜸 
