@@ -3,6 +3,7 @@ import axios from "axios";
 import Movie from "./Movie";
 import "./App.css";
 
+
 class App extends React.Component {
   state = { // state는 React.Componet에 들어 있는 녀셕임. 객체 라고 할 수 있음
     isLoading: true,
