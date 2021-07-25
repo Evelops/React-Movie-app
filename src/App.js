@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from "axios";
 import Movie from "./Movie";
-import "./App.css";
+import navigator from"./navigator";
+import "./App.css"; 
+
 
 
 class App extends React.Component {
@@ -16,9 +18,10 @@ class App extends React.Component {
         data: { movies }
       }
     } = await axios.get("https://yts-proxy.now.sh/list_movies.json?sort_by=rating");
+    
     this.setState({ movies, isLoading: false });
   };
-  componentDidMount() {
+  componentDidMount() { // component가 마운트 되자마자 첫번째로 호출되는 함수=> getMovies 함수는 api를 호출하는 함수 임으로 다음과 같이 사용됨.
     this.getMovies();
   }
   render() {
@@ -51,3 +54,4 @@ class App extends React.Component {
 }
 
 export default App;
+  
